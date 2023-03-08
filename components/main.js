@@ -10,7 +10,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     const web3 = new Web3(
-      "https://mainnet.infura.io/v3/ea9014a34edd41ad901147a92849946b"
+      "https://121.0.0.1:8545"
     ); // Replace with the URL of your geth node
 
     if (blockSearchValue === "" && transactionSearchValue === "") {
