@@ -18,7 +18,6 @@ const IndexPage = () => {
       setTransactionData(null);
       setError(null);
     } else if (isNaN(blockSearchValue) && blockSearchValue !== "") {
-      // if blockSearchValue is not a number, treat it as a block hash
       web3.eth
         .getBlock(blockSearchValue)
         .then((block) => {
@@ -32,12 +31,11 @@ const IndexPage = () => {
           setError(error.message);
         });
     } else if (transactionSearchValue !== "") {
-      // if transactionSearchValue is not empty, treat it as a transaction hash
       web3.eth
         .getTransaction(transactionSearchValue)
         .then((tx) => {
           setTransactionData(tx);
-          setBlockData(null); // Remove block data
+          setBlockData(null);
           setError(null);
         })
         .catch((error) => {
@@ -46,7 +44,6 @@ const IndexPage = () => {
           setError(error.message);
         });
     } else {
-      // if blockSearchValue is a number, treat it as a block number
       web3.eth
         .getBlock(parseInt(blockSearchValue))
         .then((block) => {
