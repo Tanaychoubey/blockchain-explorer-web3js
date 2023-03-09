@@ -54,7 +54,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div class="card-continer">
+    <div class="card-container">
       {!currentAccount ? "" : <span class="pro"></span>}
       <h2 className="MetaName">Metamask Connector</h2>
 
