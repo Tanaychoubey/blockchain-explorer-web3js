@@ -68,7 +68,7 @@ const IndexPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="card-container">
       <h1 className="search">Quick Search</h1>
       <label className="LabelStyle">
         Fetch block data using block hash or block number <br></br>
