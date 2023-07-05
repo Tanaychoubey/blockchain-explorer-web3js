@@ -1,3 +1,9 @@
+Blockchain Explorer application that uses Ethereum blockchain and
+Web3.js or Ether.js library. It allows users to Query block and transaction data using
+block hash, block number, or transaction hash. Metamask wallet is integrated for
+seamless interaction with decentralized applications. The application uses Geth node
+for backend data fetching when Metamask is not connected
+
 ## Getting Started
 
 Install go ethereum(geth) in your system.
